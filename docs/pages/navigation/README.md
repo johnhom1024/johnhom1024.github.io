@@ -41,8 +41,21 @@ export default {
         title: '博客',
         children: [
           {
+            name: 'limbopro',
+            link: 'https://limbopro.com/',
+          },
+          {
             name: 'Sabrina的万事屋',
             link: 'https://merlinblog.xyz/'
+          }
+        ]
+      },
+      {
+        title: '工具类',
+        children: [
+          {
+            name: '创业团队容器化办公',
+            link: 'https://startups.mytrade.fun'
           }
         ]
       }
