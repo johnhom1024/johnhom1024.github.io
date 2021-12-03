@@ -51,11 +51,33 @@ export default {
         ]
       },
       {
-        title: '工具类',
+        title: '社区网站',
+        children: [
+          {
+            name: 'IT邦邦忙',
+            link: 'https://ithelp.ithome.com.tw/'
+          }
+        ]
+      },
+      {
+        title: '工具类网站',
         children: [
           {
             name: '创业团队容器化办公',
             link: 'https://startups.mytrade.fun'
+          },
+          {
+            name: 'RunKit',
+            link: 'https://runkit.com/home'
+          },
+        ]
+      },
+      {
+        title: '高科技',
+        children: [
+          {
+            name: 'Catnet',
+            link: 'https://dash.catnet.uk/#/login'
           }
         ]
       }
