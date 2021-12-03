@@ -3,7 +3,7 @@
     <h5 class="category-title">
       {{ item.title }}
     </h5>
-    <div class="flex flex-wrap justify-between row">
+    <div class="flex flex-wrap row">
       <NavigationList-NavigationItem
         v-for="(web, index) in item.children"
         :key="index"
