@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /website/avatar.png
-heroText: blank1024的博客
+heroText: JohnHom的博客
 tagline: 一giao我里giaogiao
 actions:
   - text: Get Started
