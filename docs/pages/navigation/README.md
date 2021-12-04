@@ -47,6 +47,10 @@ export default {
           {
             name: 'Sabrina的万事屋',
             link: 'https://merlinblog.xyz/'
+          },
+          {
+            name: 'MyFreeMP3',
+            link: 'http://tool.liumingye.cn/music'
           }
         ]
       },
@@ -56,6 +60,10 @@ export default {
           {
             name: 'IT邦邦忙',
             link: 'https://ithelp.ithome.com.tw/'
+          },
+          {
+            name: 'Broker.io',
+            link: 'https://bbs.iobroker.cn/'
           }
         ]
       },
@@ -70,6 +78,18 @@ export default {
             name: 'RunKit',
             link: 'https://runkit.com/home'
           },
+          {
+            name: 'HACK学习-安全导航',
+            link: 'https://index.tesla-space.com/'
+          },
+          {
+            name: 'MacWk-精品Mac软件',
+            link: 'https://macwk.com/'
+          },
+          {
+            name: 'IPAddress',
+            link: 'https://www.ipaddress.com/'
+          }
         ]
       },
       {
@@ -78,6 +98,19 @@ export default {
           {
             name: 'Catnet',
             link: 'https://dash.catnet.uk/#/login'
+          }
+        ]
+      },
+      {
+        title: '硬件科普',
+        children: [
+          {
+            name: '显示器吧',
+            link: 'https://www.xianshiqiba.com/'
+          },
+          {
+            name: '装备前线',
+            link: 'https://www.zfrontier.com/'
           }
         ]
       }
