@@ -3,7 +3,6 @@
 <NavigationList-index :list="list" />
 
 <script>
-
 export default {
   setup() {
     const list = [
