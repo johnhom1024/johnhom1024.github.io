@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "prepare": "husky install"
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-register-components": "^2.0.0-beta.27",
