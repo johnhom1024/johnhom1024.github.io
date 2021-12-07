@@ -50,6 +50,10 @@ export default {
           {
             name: 'MyFreeMP3',
             link: 'http://tool.liumingye.cn/music'
+          },
+          {
+            name: '死月的博客',
+            link: 'https://xcoder.in/'
           }
         ]
       },
