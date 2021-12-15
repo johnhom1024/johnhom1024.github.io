@@ -6,20 +6,18 @@
  */
 
 export const sidebar = {
-  // '/pages/repository/': [
-  //   {
-  //     title: 'Linux',
-  //     collapseable: true,
-  //     isGroup: true,
-  //     children: [
-  //       'ssh的基础使用'
-  //     ]
-  //   }
-  // ]
   '/pages/guide/': [
     {
       text: 'Guide',
-      children: ['/pages/guide/README.md', '/pages/guide/getting-started.md'],
+      link: 'README.md'
     },
   ],
+  '/pages/macOS/': [
+    {
+      text: 'macOS设置指南',
+      children: [
+        'terminal.md'
+      ]
+    }
+  ]
 }

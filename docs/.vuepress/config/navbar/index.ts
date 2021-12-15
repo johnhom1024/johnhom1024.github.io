@@ -8,5 +8,9 @@ export const navbar = [
   {
     text: '网址大全',
     link: '/pages/navigation/README.md'
+  },
+  {
+    text: 'macOS配置',
+    link: '/pages/macOS/README.md'
   }
 ]
