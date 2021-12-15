@@ -10,8 +10,8 @@ export default {
         title: '电影网站',
         children: [
           {
-            name: '蛋蛋赞',
-            link: 'https://www.twoeggz.com/'
+            name: '蛋蛋赞影院',
+            link: 'https://www.dandanzan.top/'
           },
           {
             name: '低端影视',
@@ -67,6 +67,10 @@ export default {
           {
             name: 'Broker.io',
             link: 'https://bbs.iobroker.cn/'
+          },
+          {
+            name: 'ign',
+            link: 'https://www.ign.com.cn/',
           }
         ]
       },
