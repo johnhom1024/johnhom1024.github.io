@@ -33,6 +33,10 @@ export default {
           {
             name: 'M站',
             link: 'http://bimiacg2.net/',
+          },
+          {
+            name: '琉璃神社',
+            link: 'https://www.hacg.cat/index.html'
           }
         ]
       },
