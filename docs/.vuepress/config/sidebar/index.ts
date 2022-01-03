@@ -16,7 +16,8 @@ export const sidebar = {
     {
       text: 'macOS设置指南',
       children: [
-        'terminal.md'
+        'terminal.md',
+        'NodeJs.md',
       ]
     }
   ]
