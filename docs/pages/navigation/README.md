@@ -108,7 +108,7 @@ export default {
         children: [
           {
             name: 'Catnet',
-            link: 'https://dash.catnet.uk/#/login'
+            link: 'https://console.catnet.uk/'
           }
         ]
       },
