@@ -44,11 +44,9 @@ jobs:
           node-version: 18
           cache: 'pnpm'
       
-
-
       # 打包静态文件
       - name: Build
-        run: pnpm i --force --frozen-lockfile && npm run docs:build
+        run: pnpm i --force --frozen-lockfile && npm run build
 
       # 部署
       - name: Setup Pages
