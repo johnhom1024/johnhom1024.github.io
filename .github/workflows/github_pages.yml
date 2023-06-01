@@ -31,6 +31,12 @@ jobs:
         with:
           persist-credentials: false
       
+      # 这个安装pnpm的step必须在set node version之前
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      
       # 操作来安装 Node.js 运行环境，并设置了 `node-version: 16` 参数，使用 Node.js 版本 16。同时还启用了 `npm` 缓存。
       - name: Set node version to 18
         uses: actions/setup-node@v3
@@ -38,10 +44,7 @@ jobs:
           node-version: 18
           cache: 'pnpm'
       
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+
 
       # 打包静态文件
       - name: Build
