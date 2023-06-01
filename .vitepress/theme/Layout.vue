@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import Home from './Home.vue'
-import Article from './Article.vue'
-import NotFound from './NotFound.vue'
+import { useData } from 'vitepress';
+import Home from './Home.vue';
+import Article from './Article.vue';
+import NotFound from './NotFound.vue';
 
-const { page, frontmatter } = useData()
+const { page, frontmatter } = useData();
 </script>
 
 <template>
@@ -13,8 +13,7 @@ const { page, frontmatter } = useData()
       <nav class="flex justify-between items-center py-10 font-bold">
         <a class="text-xl" href="/" aria-label="Johnhom">
           <img
-            class="inline-block mr-2"
-            style="width: 36px; height: 31px"
+            class="inline-block mr-2 w-9 h-auto"
             alt="logo"
             src="/img/avatar.jpg"
           />
@@ -27,10 +26,10 @@ const { page, frontmatter } = useData()
         <div class="text-sm text-gray-500 dark:text-white leading-5">
           <a
             class="hover:text-gray-700 dark:hover:text-gray-200"
-            href="https://github.com/vuejs/blog"
+            href="https://github.com/johnhom1024"
             target="_blank"
             rel="noopener"
-            ><span class="hidden sm:inline">GitHub </span>Source</a
+            ><span class="hidden sm:inline">GitHub </span></a
           >
           <span class="mr-2 ml-2">·</span>
           <a
@@ -38,14 +37,14 @@ const { page, frontmatter } = useData()
             href="/feed.rss"
             >RSS<span class="hidden sm:inline"> Feed</span></a
           >
-          <span class="mr-2 ml-2">·</span>
+          <!-- <span class="mr-2 ml-2">·</span>
           <a
             class="hover:text-gray-700 dark:hover:text-gray-200"
             href="https://vuejs.org"
             target="_blank"
             rel="noopener"
             >Vuejs.org →</a
-          >
+          > -->
         </div>
       </nav>
     </div>
