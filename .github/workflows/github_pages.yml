@@ -1,0 +1,60 @@
+name: GitHub Actions Build and Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    # 只在下列路径变更时触发
+    # paths:
+    #   - 'docs/**'
+    #   - 'package.json'
+
+# 设置上海时区
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # 用于指定作业（jobs）所需的权限。该字段可以设置以下几种权限：
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      
+      # 操作来安装 Node.js 运行环境，并设置了 `node-version: 16` 参数，使用 Node.js 版本 16。同时还启用了 `npm` 缓存。
+      - name: Set node version to 18
+        uses: actions/setup-node@v3
+        with: 
+          node-version: 18
+          cache: 'pnpm'
+
+      # 打包静态文件
+      - name: Build
+        run: pnpm install && npm run docs:build
+
+      # 部署
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
