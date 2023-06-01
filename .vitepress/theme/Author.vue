@@ -5,7 +5,7 @@ const { frontmatter } = useData()
 </script>
 
 <template>
-  <dl class="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 dark:xl:border-slate-200/5">
+  <dl class="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 dark:xl:border-slate-200/5" v-if="frontmatter.avatar">
     <dt class="sr-only">Authors</dt>
     <dd>
       <ul
