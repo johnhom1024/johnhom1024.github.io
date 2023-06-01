@@ -30,11 +30,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           persist-credentials: false
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
       
       # 操作来安装 Node.js 运行环境，并设置了 `node-version: 16` 参数，使用 Node.js 版本 16。同时还启用了 `npm` 缓存。
       - name: Set node version to 18
@@ -42,10 +37,15 @@ jobs:
         with: 
           node-version: 18
           cache: 'pnpm'
+      
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       # 打包静态文件
       - name: Build
-        run: pnpm ci && npm run docs:build
+        run: pnpm i --force --frozen-lockfile && npm run docs:build
 
       # 部署
       - name: Setup Pages
